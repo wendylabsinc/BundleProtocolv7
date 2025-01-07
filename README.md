@@ -1,6 +1,9 @@
 # BundleProtocolv7
 
-Welcome to the official BundleProtocolv7 repository under the Wendylabsinc organization! This package aims to provide a reliable bundle management and exchange protocol. Learn more about the Bundle Protocol v7 here: https://datatracker.ietf.org/doc/html/rfc9171
+![Swift](https://img.shields.io/badge/Swift-6.0+-orange.svg) ![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg) ![macOS](https://img.shields.io/badge/macOS-14.0+-blue.svg) ![watchOS](https://img.shields.io/badge/watchOS-10.0+-blue.svg) ![tvOS](https://img.shields.io/badge/tvOS-17.0+-blue.svg) ![Linux](https://img.shields.io/badge/Linux-5.0+-blue.svg) ![Windows](https://img.shields.io/badge/Windows-10+-blue.svg) ![Android](https://img.shields.io/badge/Android-10+-blue.svg)
+
+This is a Swift implementation of the Bundle Protocol v7 (BPv7). 
+Learn more about the Bundle Protocol v7 here: https://datatracker.ietf.org/doc/html/rfc9171
 
 Delay Tolerant Networking (DTN) is a network architecture designed to handle environments where connections are intermittent, disrupted, or have significant delays. Unlike traditional internet protocols, which require continuous and immediate connections, DTN operates using a store-and-forward approach. Data is stored at each node until a connection becomes available to forward it further. This allows communication to continue even when the network is fragmented or unreliable.
 
