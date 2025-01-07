@@ -4,7 +4,7 @@ import Foundation // Use full Foundation on macOS/iOS/watchOS/tvOS
 import FoundationEssential // Use FoundationEssential on other platforms
 #endif
 
-public struct EndpointID: Sendable {
+public struct EndpointID: Sendable, Equatable {
     public enum Scheme: UInt, Sendable {
         case dtn = 1
         case ipn = 2
@@ -20,4 +20,8 @@ public struct EndpointID: Sendable {
     
     /// Creates a null endpoint ID
     public static let null = EndpointID(scheme: .dtn, ssp: "none")
+    
+    public static func == (lhs: EndpointID, rhs: EndpointID) -> Bool {
+        return lhs.scheme == rhs.scheme && lhs.ssp == rhs.ssp
+    }
 } 
